@@ -1,0 +1,43 @@
+button {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: solid 1px black;
+  transition: all .4s ease;
+  font-family: 'Arial Narrow';
+  font-size: 24px;
+  color: black;
+  margin: 11px 4px 4px 0;
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 4px 4px crimson;
+}
+
+.clicked {
+    background-color: black;
+    color: white;
+}
+
+.calculate {
+  padding-top: 100px;
+}
+
+.rezult {
+  margin: auto;
+  width: 240px;
+  height: 50px;
+  border-bottom: solid 3px #000;
+  font-size: 50px;
+}
+
+.rezult .start {
+  padding-right: 25px;
+  text-align: end;
+}
+
+.block_number {
+  margin: auto;
+  width: 231px;
+  height: 181px;
+}
