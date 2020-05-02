@@ -1,43 +1,97 @@
-button {
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  border: solid 1px black;
-  transition: all .4s ease;
-  font-family: 'Arial Narrow';
-  font-size: 24px;
-  color: black;
-  margin: 11px 4px 4px 0;
+
+body {
+  background-color: #E8423A;
+  user-select: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  color: #000;
 }
-button:hover {
+
+.container {
+  padding-top: 150px;
+}
+
+.rezult {
+  display: flex;
+  justify-content: center;
+  justify-self: start;
+}
+
+input {
+  background-color: #4A4545;
+  width: 289px;
+  height: 133px;
+  border-radius: 5px;
+  font-size: 64px;
+  font-weight: bold;
+  color: #fff;
+  text-align: end;
+  border: none;
+  padding-right: 30px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section_opertions {
+  justify-content: center;
+  display: flex;
+}
+
+.section_one {
+  width: 200px;
+  height: 270px;
+  margin-top: -15px;
+  background-color: #FFFCFC;
+  border-radius: 5px;
+}
+
+.firts_row {
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.firts_row .clear {
+  width: 100px;
+}
+
+.firts_row .back {
+  width: 100px;
+}
+
+.number_section {
+  display: flex;
+  flex-direction: row;
+}
+
+.number_section .item {
+  margin: 15px 10px 5px 33px;
+}
+
+.section_two {
+  width: 70px;
+  height: 285px;
+  background-color: #E8423A;
+  margin: -25px 0 0 -22px ;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section_two .item {
+  text-align: center;
+  padding-top: 30px;
+  margin: auto;
+  color: #fff;
+}
+/* 
+.item {
+  transition: all .4s ease;
+}
+
+.item:hover {
     cursor: pointer;
     box-shadow: 4px 4px crimson;
 }
 
-.clicked {
-    background-color: black;
-    color: white;
-}
-
-.calculate {
-  padding-top: 100px;
-}
-
-.rezult {
-  margin: auto;
-  width: 240px;
-  height: 50px;
-  border-bottom: solid 3px #000;
-  font-size: 50px;
-}
-
-.rezult .start {
-  padding-right: 25px;
-  text-align: end;
-}
-
-.block_number {
-  margin: auto;
-  width: 231px;
-  height: 181px;
-}
+.section_two .item:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px #fff;
+} */
