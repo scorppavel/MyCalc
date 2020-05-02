@@ -4,44 +4,54 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>calc</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 	<script src="js/Code.js" defer></script>
 </head>
 
 <body>
-	<section class="calculate">
+	<div class="container">
 		<div class="rezult">
-			<p class="start" id="out">0</p>
+			<form name="form"><input type="text" name="textview" readonly></form>
 		</div>
-		<div class="block_number">
-			<div class="btn_section">
-				<button onclick="calc()" id="n7">7</button>
-				<button>8</button>
-				<button>9</button>
-				<button>*</button>
-			</div> 		
-			<div class="btn_section">
-				<button>4</button>
-				<button>5</button>
-				<button>6</button>
-				<button>/</button>
+		<div class="section_opertions">
+			<div class="section_one">
+				<div class="firts_row">
+					<div class="item clear" onclick="clean()">c</div>
+					<div class="item back" onclick="back()">&larr;</div>
+				</div>
+				<div class="second_row">
+					<div class="number_section">
+						<div class="item" onclick="insert('7')">7</div>
+						<div class="item" onclick="insert('8')">8</div>
+						<div class="item" onclick="insert('9')">9</div>
+					</div>
+					<div class="number_section">
+						<div class="item" onclick="insert('4')">4</div>
+						<div class="item" onclick="insert('5')">5</div>
+						<div class="item" onclick="insert('6')">6</div>
+					</div>
+					<div class="number_section">
+						<div class="item" onclick="insert('1')">1</div>
+						<div class="item" onclick="insert('2')">2</div>
+						<div class="item" onclick="insert('3')">3</div>
+					</div>
+					<div class="number_section">
+						<div class="item" onclick="insert('0')">0</div>
+						<div class="item" onclick="insert('.')">.</div>
+						<div class="item" onclick="equal()">=</div>
+					</div>
+				</div>
 			</div>
-			<div class="first_section">
-				<button>1</button>
-				<button>2</button>
-				<button>3</button>
-				<button>+</button>
-			</div>
-			<div class="btn_section">
-				<button>C</button>
-				<button>0</button>
-				<button>.</button>
-				<button>=</button>
+			<div class="section_two">
+				<div class="item" onclick="insert('/')">&divide;</div>
+				<div class="item" onclick="insert('*')">*</div>
+				<div class="item" onclick="insert('-')">-</div>
+				<div class="item" onclick="insert('+')">+</div>
 			</div>
 		</div>
-	</section>
-
+	</div>
 </body>
 
 </html>
